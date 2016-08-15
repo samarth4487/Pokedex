@@ -12,6 +12,7 @@
 		10BC54C21D62202B0057914D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BC54C01D62202B0057914D /* Main.storyboard */; };
 		10BC54C41D62202B0057914D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BC54C31D62202B0057914D /* Assets.xcassets */; };
 		10BC54C71D62202B0057914D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BC54C51D62202B0057914D /* LaunchScreen.storyboard */; };
+		10BC54CF1D6222240057914D /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 10BC54CE1D6222240057914D /* pokemon.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		10BC54C31D62202B0057914D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10BC54C61D62202B0057914D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10BC54C81D62202B0057914D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10BC54CE1D6222240057914D /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				10BC54BE1D62202A0057914D /* ViewController.swift */,
 				10BC54C01D62202B0057914D /* Main.storyboard */,
 				10BC54C31D62202B0057914D /* Assets.xcassets */,
+				10BC54CE1D6222240057914D /* pokemon.csv */,
 				10BC54C51D62202B0057914D /* LaunchScreen.storyboard */,
 				10BC54C81D62202B0057914D /* Info.plist */,
 			);
@@ -125,6 +128,7 @@
 			files = (
 				10BC54C71D62202B0057914D /* LaunchScreen.storyboard in Resources */,
 				10BC54C41D62202B0057914D /* Assets.xcassets in Resources */,
+				10BC54CF1D6222240057914D /* pokemon.csv in Resources */,
 				10BC54C21D62202B0057914D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
