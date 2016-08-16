@@ -38,8 +38,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             musicPlayer.prepareToPlay()
             musicPlayer.play()
             
-        } catch {
-            print(NSError.description())
+        } catch let err as NSError {
+            print(err.description)
         }
     }
     
@@ -97,6 +97,15 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
+        var poke: Pokemon!
+        if inSearchMode {
+            poke = filteredPokemon[indexPath.row]
+        } else {
+            poke = pokemon[indexPath.row]
+        }
+        
+        performSegueWithIdentifier("PokemonDetailVC", sender: poke)
+        
     }
 
     @IBAction func musicButtonPressed(sender: UIButton) {
@@ -125,6 +134,17 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             let lower = searchBar.text?.lowercaseString
             filteredPokemon = pokemon.filter({$0.name.rangeOfString(lower!) != nil})
             collectionView.reloadData()
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "PokemonDetailVC" {
+            if let detailVC = segue.destinationViewController as? PokemonDetailVC {
+                if let poke = sender as? Pokemon {
+                    detailVC.pokemon = poke
+                }
+            }
         }
     }
 }
