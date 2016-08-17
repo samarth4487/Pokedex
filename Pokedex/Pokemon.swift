@@ -24,6 +24,7 @@ class Pokemon {
     private var _evolutionID: String!
     private var _evolutionLevel: String!
     private var _pokemonURL: String!
+    var movesArray: [Dictionary<String, AnyObject>]!
     
     var name: String {
         
@@ -245,6 +246,13 @@ class Pokemon {
                     //print(self.evolutionLevel)
                     //print(self.evolutionName)
                     //print(self.evolutionID)
+                }
+                
+                //MARK:- MOVES
+                if let moves = mainDict["moves"] as? [Dictionary<String, AnyObject>] where moves.count > 0 {
+                    
+                    self.movesArray = moves
+                    //print(self.movesArray.count)
                 }
                 
             }

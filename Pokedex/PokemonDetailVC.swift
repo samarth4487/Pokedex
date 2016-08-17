@@ -24,11 +24,11 @@ class PokemonDetailVC: UIViewController {
     @IBOutlet weak var evolutionLabel: UILabel!
     @IBOutlet weak var firstImage: UIImageView!
     @IBOutlet weak var secondImage: UIImageView!
-    @IBOutlet weak var segmentController: UISegmentedControl!
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
         pokedexLabel.text = "\(pokemon.pokedexID)"
         nameLabel.text = pokemon.name.capitalizedString
         let image = UIImage(named: "\(pokemon.pokedexID)")
@@ -39,6 +39,7 @@ class PokemonDetailVC: UIViewController {
             
             self.updateUI()
         }
+        
     }
     
     func updateUI() {
@@ -75,4 +76,5 @@ class PokemonDetailVC: UIViewController {
         
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
 }
