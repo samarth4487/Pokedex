@@ -212,43 +212,40 @@ class Pokemon {
                 }
                 
                 //MARK:- EVOLUTIONS
-//                if let evolutions = mainDict["evolutions"] as? [Dictionary<String, String>] where evolutions.count > 0 {
-//                    
-//                    if let nextEvo = evolutions[0]["to"] {
-//                        
-//                        if nextEvo.rangeOfString("mega") == nil {
-//                            
-//                            self._evolutionName = nextEvo
-//                            
-//                            if let uri = evolutions[0]["resource_uri"] {
-//                                
-//                                let newStr = uri.stringByReplacingOccurrencesOfString("/api/v1/pokemon/", withString: "")
-//                                let nextEvoId = newStr.stringByReplacingOccurrencesOfString("/", withString: "")
-//                                
-//                                self._evolutionID = nextEvoId
-//                                
-//                                if let lvlExist = evolutions[0]["level"] {
-//                                    
-//                                    if let lvl = lvlExist as? String {
-//                                        
-//                                        self._evolutionLevel = lvl
-//                                    }
-//                                    
-//                                } else {
-//                                    
-//                                    self._evolutionLevel = ""
-//                                }
-//                                
-//                            }
-//                            
-//                        }
-//                        
-//                    }
-//                    
-//                    print(self.evolutionLevel)
-//                    print(self.evolutionName)
-//                    print(self.evolutionID)
-//                }
+                if let evolutions = mainDict["evolutions"] as? [Dictionary<String, AnyObject>] where evolutions.count > 0 {
+                    
+                    if let nextEvo = evolutions[0]["to"] as? String {
+                        
+                        if nextEvo.rangeOfString("mega") == nil {
+                            
+                            self._evolutionName = nextEvo
+                            
+                            if let uri = evolutions[0]["resource_uri"] as? String {
+                                
+                                let newStr = uri.stringByReplacingOccurrencesOfString("/api/v1/pokemon/", withString: "")
+                                let nextEvoId = newStr.stringByReplacingOccurrencesOfString("/", withString: "")
+                                
+                                self._evolutionID = nextEvoId
+                                
+                                if let lvlExist = evolutions[0]["level"] as? Int {
+                                    
+                                    self._evolutionLevel = "\(lvlExist)"
+                                    
+                                } else {
+                                    
+                                    self._evolutionLevel = ""
+                                }
+                                
+                            }
+                            
+                        }
+                        
+                    }
+                    
+                    //print(self.evolutionLevel)
+                    //print(self.evolutionName)
+                    //print(self.evolutionID)
+                }
                 
             }
             

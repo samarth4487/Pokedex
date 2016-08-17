@@ -49,9 +49,30 @@ class PokemonDetailVC: UIViewController {
         self.weightLabel.text = pokemon.weight
         self.attackLabel.text = pokemon.attack
         self.defenseLabel.text = pokemon.defense
+        
+        if pokemon.evolutionName != "" {
+            
+            if pokemon.evolutionLevel != "" {
+                
+                self.evolutionLabel.text = "Next Evolution: \(pokemon.evolutionName.capitalizedString) LVL \(pokemon.evolutionLevel)"
+                let image = UIImage(named: "\(pokemon.evolutionID)")
+                secondImage.image = image
+            } else {
+                
+                self.evolutionLabel.text = "Next Evolution: \(pokemon.evolutionName.capitalizedString)"
+                let image = UIImage(named: "\(pokemon.evolutionID)")
+                secondImage.image = image
+            }
+            
+        } else {
+            
+            self.evolutionLabel.text = "No Next Evolution"
+            secondImage.image = nil
+        }
     }
 
     @IBAction func backButtonPressed(sender: UIButton) {
+        
         dismissViewControllerAnimated(true, completion: nil)
     }
 }
