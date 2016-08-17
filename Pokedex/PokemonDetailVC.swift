@@ -27,8 +27,28 @@ class PokemonDetailVC: UIViewController {
     @IBOutlet weak var segmentController: UISegmentedControl!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        pokedexLabel.text = "\(pokemon.pokedexID)"
         nameLabel.text = pokemon.name.capitalizedString
+        let image = UIImage(named: "\(pokemon.pokedexID)")
+        mainImage.image = image
+        firstImage.image = image
+        
+        pokemon.downloadPokemonDetail {
+            
+            self.updateUI()
+        }
+    }
+    
+    func updateUI() {
+        
+        self.descriptionLabel.text = pokemon.pokemonDescription
+        self.typeLabel.text = pokemon.type
+        self.heightLabel.text = pokemon.height
+        self.weightLabel.text = pokemon.weight
+        self.attackLabel.text = pokemon.attack
+        self.defenseLabel.text = pokemon.defense
     }
 
     @IBAction func backButtonPressed(sender: UIButton) {
