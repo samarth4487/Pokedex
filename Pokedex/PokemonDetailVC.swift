@@ -24,11 +24,13 @@ class PokemonDetailVC: UIViewController {
     @IBOutlet weak var evolutionLabel: UILabel!
     @IBOutlet weak var firstImage: UIImageView!
     @IBOutlet weak var secondImage: UIImageView!
+    @IBOutlet weak var movesButton: UIButton!
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
+        movesButton.layer.cornerRadius = 10.0
         pokedexLabel.text = "\(pokemon.pokedexID)"
         nameLabel.text = pokemon.name.capitalizedString
         let image = UIImage(named: "\(pokemon.pokedexID)")
@@ -92,7 +94,7 @@ class PokemonDetailVC: UIViewController {
                 if let moves = sender as? [Dictionary<String, AnyObject>] {
                     
                     movesVC.moves = moves
-                    print(movesVC.moves)
+                    //print(movesVC.moves)
                 }
             }
         }

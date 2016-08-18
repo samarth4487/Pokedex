@@ -181,8 +181,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sF9-ad-vZS">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFM-HG-6G7">
-                                        <rect key="frame" x="107" y="14" width="107" height="37"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFM-HG-6G7">
+                                        <rect key="frame" x="160" y="33" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="26"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -208,14 +208,14 @@
                                     <constraint firstItem="uFM-HG-6G7" firstAttribute="centerX" secondItem="sF9-ad-vZS" secondAttribute="centerX" id="ok7-RU-QcT"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c84-e4-dD9">
-                                <rect key="frame" x="16" y="111" width="129" height="129"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c84-e4-dD9">
+                                <rect key="frame" x="16" y="114" width="129" height="129"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="c84-e4-dD9" secondAttribute="height" multiplier="1:1" id="vZy-SI-JAx"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="d8d-Fm-XrP">
-                                <rect key="frame" x="16" y="262" width="288" height="24"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="d8d-Fm-XrP">
+                                <rect key="frame" x="16" y="265" width="288" height="24"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AhC-Ua-vXw">
                                         <rect key="frame" x="0.0" y="0.0" width="69" height="24"/>
@@ -253,8 +253,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="UNF-2m-iSY">
-                                <rect key="frame" x="16" y="306" width="288" height="24"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="UNF-2m-iSY">
+                                <rect key="frame" x="16" y="309" width="288" height="24"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="T8Q-5j-8Ig">
                                         <rect key="frame" x="0.0" y="0.0" width="83" height="24"/>
@@ -292,8 +292,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="QhM-5Y-RLa">
-                                <rect key="frame" x="16" y="345" width="288" height="24"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="QhM-5Y-RLa">
+                                <rect key="frame" x="16" y="348" width="288" height="24"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Cvf-u3-2TH">
                                         <rect key="frame" x="0.0" y="0.0" width="86" height="24"/>
@@ -366,8 +366,8 @@
                                     <constraint firstAttribute="width" constant="100" id="l6Q-T5-rEQ"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="  " lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="OZm-cn-De7">
-                                <rect key="frame" x="165" y="113" width="139" height="129"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="OZm-cn-De7">
+                                <rect key="frame" x="165" y="116" width="139" height="129"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="OZm-cn-De7" secondAttribute="height" multiplier="134:125" id="GHm-WO-zCM"/>
                                 </constraints>
@@ -429,6 +429,7 @@
                         <outlet property="firstImage" destination="NGE-Yk-lcE" id="jsd-zC-xsf"/>
                         <outlet property="heightLabel" destination="nsd-o1-Syc" id="Kwg-Bf-TVH"/>
                         <outlet property="mainImage" destination="c84-e4-dD9" id="epB-06-utX"/>
+                        <outlet property="movesButton" destination="XHw-4L-35W" id="I4D-gQ-IJZ"/>
                         <outlet property="nameLabel" destination="uFM-HG-6G7" id="VlH-GO-xPM"/>
                         <outlet property="pokedexLabel" destination="WxQ-Nu-IML" id="M3F-5g-lOn"/>
                         <outlet property="secondImage" destination="KVt-qm-sGB" id="L0h-DL-0Fr"/>

@@ -107,6 +107,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         performSegueWithIdentifier("PokemonDetailVC", sender: poke)
         
     }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        
+        return CGSize(width: 105.0, height: 105.0)
+    }
 
     @IBAction func musicButtonPressed(sender: UIButton) {
         
