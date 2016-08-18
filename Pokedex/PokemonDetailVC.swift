@@ -77,4 +77,24 @@ class PokemonDetailVC: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func movesButtonPressed(sender: AnyObject) {
+        
+        //print(pokemon.movesArray.count)
+        performSegueWithIdentifier("PokemonMovesVC", sender: pokemon.movesArray)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "PokemonMovesVC" {
+            
+            if let movesVC = segue.destinationViewController as? PokemonMovesVC {
+                
+                if let moves = sender as? [Dictionary<String, AnyObject>] {
+                    
+                    movesVC.moves = moves
+                    print(movesVC.moves)
+                }
+            }
+        }
+    }
 }
