@@ -26,11 +26,6 @@ class PokemonMovesVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         updateUI()
     }
 
-    func updateUI() {
-        
-        //print(self.moves)
-    }
-
     @IBAction func backButtonPressed(sender: UIButton) {
         
         dismissViewControllerAnimated(true, completion: nil)
@@ -66,11 +61,9 @@ class PokemonMovesVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         url = "\(BASE_URL)\(moves[indexPath.row]["resource_uri"]!)"
         downloadMovesDescription {
             
-            // Add a function update UI to display action sheet using that method!!!!
+            self.updateUI()
         }
-        let actionSheet = UIAlertController(title: "Description", message: self.movesDescription, preferredStyle: .Alert)
-        actionSheet.addAction(UIAlertAction(title: "Done", style: .Cancel) { _ in })
-        presentViewController(actionSheet, animated: true, completion: nil)
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
     func downloadMovesDescription(completed: DownloadComplete) {
@@ -91,6 +84,13 @@ class PokemonMovesVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             completed()
         }
+    }
+    
+    func updateUI() {
+        
+        let actionSheet = UIAlertController(title: "", message: self.movesDescription, preferredStyle: .Alert)
+        actionSheet.addAction(UIAlertAction(title: "Go Back", style: .Cancel, handler: nil))
+        presentViewController(actionSheet, animated: true, completion: nil)
     }
     
 }
