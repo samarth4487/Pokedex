@@ -7,5 +7,6 @@ target 'Pokedex' do
 
   # Pods for Pokedex
 pod 'Alamofire', '~> 3.4'
+pod 'TableViewPopoverPresenting'
 
 end

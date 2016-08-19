@@ -14,15 +14,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TableViewPopoverPresenting.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3481F73A62A70A80F6D4B6264CD53D8D</key>
+		<key>222B12C695D0EA8085117997F0A0E8B7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C3B308F57A9F742D2B2684F388AFC24F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

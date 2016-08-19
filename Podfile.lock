@@ -1,12 +1,15 @@
 PODS:
   - Alamofire (3.4.1)
+  - TableViewPopoverPresenting (1.1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 3.4)
+  - TableViewPopoverPresenting
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  TableViewPopoverPresenting: cfebeeccdfebc4a51a69a70e08d8f58f0342db3c
 
-PODFILE CHECKSUM: 6804f57a97d2af7c5efa3b0a6047509fd390445e
+PODFILE CHECKSUM: 438f7d3bba945995c3801f43eaebac054755da95
 
 COCOAPODS: 1.0.1
